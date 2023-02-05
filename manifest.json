@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Stim video",
+  "version": "1.0",
+  "description": "Stimulating video to watch next to educational content.",
+  "minimum_chrome_version": "10.0",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "brain-stimulation.png",
+    "32": "brain-stimulation.png",
+    "48": "brain-stimulation.png"
+  },
+  "devtools_page": "devtools.html",
+  "options_page": "options.html"
+}

@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.video-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 300vh;
+  max-height: 300vw;
+}
+
+/* Super wide */
+@media (min-aspect-ratio: 16/9) {
+  .video-wrapper iframe {
+    height: calc((100vw * 9) / 16);
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50vh;
+    margin-bottom: 0;
+    transform: translate(0, -50%);
+  }
+}
+
+/* Super tall */
+@media (max-aspect-ratio: 16/9) {
+  .video-wrapper iframe {
+    height: 100vh;
+    width: calc((100vh * 16) / 9);
+    margin-left: 50vw;
+    margin-right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    transform: translate(-50%, 0);
+  }
+}

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Stim video",
   "version": "1.0",
-  "description": "Stimulating video to watch next to educational content.",
+  "description": "Stimulating video to watch next to educational content Like subway surfer of minecraft parkour.",
   "minimum_chrome_version": "10.0",
   "permissions": ["storage"],
   "icons": {
